@@ -33,7 +33,7 @@ void kmp(string text, string pattern, int lps[]){
         }
 
         if (j == m) {
-            std::cout << "Found pattern at index " << i - j << std::endl;
+            cout << "Found pattern at index " << i - j << endl;
             j = lps[j - 1];
         } else if (i < n && pattern[j] != text[i]) {
             if (j != 0) {
