@@ -19,22 +19,25 @@ float arr[n], dep[n];
     int c=0;
     int i=0;
     int j=0;
+   // int max=0;
 
     while(j<n){
-         if(arr[i]>dep[j]){
+         if(arr[i]<dep[j]){
             c++;
             i++;
         }
-        else if(arr[i]<dep[j])
+        else if(arr[i]>dep[j])
         {
-            j++;
             c--;
+            j++;
+
         }
         else
         {
             i++;
             j++;
         }
+
     }
 
 cout<<c;

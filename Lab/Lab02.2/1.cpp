@@ -31,7 +31,7 @@ int main(){   int n;
     int i=0;
     int j=0;
     while(j<n){
-        if(s[i]<s[j]){
+        if(f[i]<s[j]){
             c++;
             j=i;
             i++;
